@@ -6,7 +6,9 @@ const app = express();
 configDotenv();
 
 app.get("/", (req, res)=>{
-    res.send('Hello World')
+    res.json({
+        name: "Samuel"
+    })
 })
 
 app.listen(process.env.PORT, ()=>{
